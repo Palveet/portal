@@ -145,6 +145,7 @@ input[type="password"] {
     background: rgba(247, 247, 247, 0.3);
     backdrop-filter: blur(30px);
     border-radius: 10px;
+    margin: 15%;
 }
 
 .testimonials .card h3 {
@@ -214,5 +215,37 @@ input[type="password"] {
     padding-right: 0;
 }
 
+.about .card {
+    width: 210px;
+    height: 285px;
+    background: rgba(247, 247, 247, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+    margin: 0 -15%;
+}
 
+.about .card h3 {
+    font-size: 18px;
+}
+
+.about .owl-carousel {
+    margin-top: -10%;
+}
+
+.about .card .card-img-top {
+    width: 80%!important;
+    opacity: 0.2;
+    height: 70%;
+}
+
+.about .owl-carousel .owl-item {
+    transform: scale(0.4);
+    padding: 10px 0px;
+    transition: all 0.5s;
+}
+
+.about .owl-carousel .owl-item.active.center {
+    transform: scale(0.8);
+    z-index: 999;
 }
