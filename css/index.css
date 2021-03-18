@@ -210,7 +210,7 @@ input[type="password"] {
     line-height: 18px;
     color: #000000;
     display: block;
-    margin-top: -25px;
+    margin-top: -20px;
     margin-left: -43px;
     padding-right: 0;
 }
@@ -248,4 +248,40 @@ input[type="password"] {
 .about .owl-carousel .owl-item.active.center {
     transform: scale(0.8);
     z-index: 999;
+}
+
+@media(max-width:1100px) {
+    .card {
+        margin: 9%;
+    }
+    .form-group {
+        margin-left: 10%;
+    }
+}
+
+@media(min-width:600px) and (max-width:1099px) {
+    .card {
+        width: 80%;
+        margin: 9% -39%;
+    }
+}
+
+@media(max-width:750px) {
+    .login {
+        margin-top: 10%;
+    }
+    .about .card {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media(max-width:575px) {
+    .about .card {
+        width: 50%;
+        margin: 0 23%;
+    }
+    .card {
+        margin: 9% auto;
+    }
 }
