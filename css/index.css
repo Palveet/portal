@@ -51,6 +51,7 @@ p {
     font-size: 20px;
     line-height: 24px;
     color: #000000;
+    padding-right: 0;
 }
 
 .choose p,
@@ -283,5 +284,64 @@ input[type="password"] {
     }
     .card {
         margin: 9% auto;
+    }
+    .rectangle {
+        width: 300px;
+        margin: 5% auto;
+    }
+    .rectangle p {
+        margin-left: 20px;
+    }
+    .rectangle h5 {
+        font-size: 16px;
+    }
+    .about p {
+        padding: 10%;
+    }
+    .form-group {
+        margin-right: 5%;
+    }
+    input[type="email"],
+    input[type="password"] {
+        width: 300px;
+    }
+    .choose p {
+        display: block;
+        margin-top: 10px;
+    }
+    .abt,
+    .test,
+    .contact {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 45px;
+    }
+}
+
+@media(max-width:325px) {
+    input[type="email"],
+    input[type="password"] {
+        width: 250px;
+    }
+    .abt,
+    .test,
+    .contact {
+        font-size: 25px;
+    }
+    .about .card h3 {
+        font-size: 15px;
+    }
+    .rectangle {
+        width: 270px;
+    }
+    .rectangle img {
+        width: 40px;
+        height: 40px;
+    }
+    .rectangle h5 {
+        font-size: 14px;
+        line-height: 60px;
     }
 }
