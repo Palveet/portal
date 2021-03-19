@@ -1,6 +1,6 @@
 body {
     background: url("/assets/portal_home.png");
-    background-size: cover;
+    background-size: contain;
 }
 
 .welcome {
@@ -290,7 +290,7 @@ input[type="password"] {
         margin: 5% auto;
     }
     .rectangle p {
-        margin-left: 20px;
+        margin-left: 50px;
     }
     .rectangle h5 {
         font-size: 16px;
@@ -317,6 +317,11 @@ input[type="password"] {
     h3 {
         font-size: 20px;
         line-height: 45px;
+    }
+    .rectangle img {
+        width: 50px;
+        height: 50px;
+        margin-left: -25%;
     }
 }
 
