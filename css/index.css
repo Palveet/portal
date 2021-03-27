@@ -88,7 +88,8 @@ input::placeholder {
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"] {
     width: 344px;
     height: 42px;
     border: 1px solid #000000;
@@ -249,6 +250,11 @@ input[type="password"] {
 .about .owl-carousel .owl-item.active.center {
     transform: scale(0.8);
     z-index: 999;
+}
+
+.modal-body .form-group {
+    margin-top: 20px;
+    margin-left: 0;
 }
 
 @media(max-width:1100px) {
