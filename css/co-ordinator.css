@@ -80,9 +80,24 @@ body {
 
 .log-out {
     position: absolute;
-    left: 35%;
+    left: 25%;
     bottom: 2%;
     padding-top: 20%;
+}
+
+p.log-out {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #0A587A;
+}
+
+.conntent {
+    margin-left: 1%;
 }
 
 .content h1 {
@@ -163,7 +178,7 @@ tbody tr {
 
 .table {
     border-collapse: separate;
-    border-spacing: 0 30px;
+    border-spacing: 0 20px;
 }
 
 tr>th {
@@ -180,4 +195,9 @@ input[type="search"] {
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+.search {
+    position: absolute;
+    right: 5%;
 }
