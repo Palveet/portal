@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="iw_logo.ico" />
     <link rel="stylesheet" href="css/co-ordinator.css" type="text/css">
 
+    <link href="css/dycalendar.min.css" rel="stylesheet" />
     <title>INCEPTION WAVE</title>
 </head>
 
@@ -92,8 +93,15 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-lg-2">
-                <p><img src="assets/calendar_icon.png"> March 25,2021</p>
+            <div class="col-lg-2 date">
+                <p><img src="assets/calendar_icon.png"> March 25, 2021</p>
+
+                <div class="some-class">
+                    <div class="calendar-container">
+                        <div id="dycalendar-month-with-skin-shadow" class="dycalendar-container skin-default shadow-default"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -102,6 +110,18 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+    <script src="js/dycalendar.min.js"></script>
+    <script>
+        dycalendar.draw({
+            target: '#dycalendar-month-with-skin-shadow',
+            type: 'month',
+            dayformat: "full",
+            monthformat: "full",
+            highlighttoday: true,
+            prevnextbutton: "show"
+        });
+    </script>
 </body>
 
 </html>
