@@ -13,23 +13,55 @@
 </head>
 
 <body>
-    <div class="container">
+    <nav class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow">
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </nav>
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 text-center side-bar">
-                <img src="assets/dummy-img.png">
-                <h1>KRITARTH MITTAL</h1>
-                <h4>INTERNSHIP CO-ORDINATOR</h4>
-                <p><img src="assets/mail_outline.png">kritarth201@gmail.com</p>
-                <p><img src="assets/call.png">9163761085</p>
-                <div class="side-nav">
-                    <p class="active"><img src="assets/intern-active.png"> Interns</p>
-                    <p><img src="assets/track.png"> Tracking</p>
-                    <p><img src="assets/review.png"> Review</p>
+
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3 side-bar text-center">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+
+                            <img src="assets/dummy-img.png">
+                            <h1>KRITARTH MITTAL</h1>
+                            <h4>INTERNSHIP CO-ORDINATOR</h4>
+                            <p><img src="assets/mail_outline.png">kritarth201@gmail.com</p>
+                            <p><img src="assets/call.png">9163761085</p>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column mb-2 side-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <p class="active"><img src="assets/intern-active.png"> Interns</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                <p><img src="assets/track.png"> Tracking</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <p><img src="assets/review.png"> Review</p>
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+                    <p class="log-out"><img src="assets/logout.png"> Logout</p>
+
                 </div>
-                <p class="log-out"><img src="assets/logout.png"> Logout</p>
-            </div>
-            <div class="col-lg-8 content">
-                <div class="d-flex justify-content-between">
+            </nav>
+            <div class="col-lg-7 content">
+                <div class="position-sticky d-flex justify-content-between">
                     <h1>Internship Dashboard</h1>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" aria-label="Search">
@@ -93,7 +125,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-lg-2 date">
+            <div class="col-lg-3 date">
                 <p><img src="assets/calendar_icon.png"> March 25, 2021</p>
 
                 <div class="some-class">
