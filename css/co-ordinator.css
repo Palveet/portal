@@ -275,3 +275,44 @@ input[type="search"] {
 .dycalendar-month-container .dycalendar-header .dycalendar-prev-next-btn.next-btn {
     right: 20px;
 }
+
+.strength {
+    width: 227px;
+    height: 121px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-top: 7%;
+    margin-top: 35%;
+}
+
+.strength h1 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #0A587A;
+}
+
+.strength p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #263238;
+}
+
+.mute {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #757070;
+}
