@@ -14,7 +14,7 @@ body {
 }
 
 .hello {
-    background: url("/assets/top-bg.png");
+    background: url("/assets/co-ordinator/top-bg.png");
     padding: 2%;
     background-repeat: no-repeat;
     border-radius: 10px;
