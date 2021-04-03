@@ -14,11 +14,23 @@
     background: #fff;
 }
 
+.name {
+    color: #0A587A;
+}
+
 .hello {
     background: url("/assets/co-ordinator/top-bg.png");
     padding: 2%;
     background-repeat: no-repeat;
     border-radius: 10px;
+}
+
+.hello-hr {
+    background: url("/assets/co-ordinator/hr-bg.png");
+    padding: 2%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: contain;
 }
 
 .side-bar {
@@ -113,7 +125,8 @@ p.log-out {
     padding: 5% 0;
 }
 
-.hello h1 {
+.hello h1,
+.hello-hr h1 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -123,7 +136,8 @@ p.log-out {
     padding: 0;
 }
 
-.hello p {
+.hello p,
+.hello-hr p {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
@@ -289,7 +303,18 @@ input[type="search"] {
     margin-top: 35%;
 }
 
-.strength h1 {
+.join-us {
+    width: 227px;
+    height: 130px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-top: 7%;
+    margin-top: 15%;
+}
+
+.strength h1,
+.join-us h1 {
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: bold;
