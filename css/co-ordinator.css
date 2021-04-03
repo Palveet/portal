@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
-body {
+.content,
+.date {
     margin: 0;
     background: rgba(140, 185, 226, 0.21);
 }
@@ -316,4 +317,51 @@ input[type="search"] {
     text-align: center;
     letter-spacing: 0.1em;
     color: #757070;
+}
+
+.pending {
+    color: #FFBD00;
+}
+
+.completed {
+    color: #2DA771;
+}
+
+.missing {
+    color: #DE5753;
+}
+
+.dropleft .dropdown-toggle::before {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.down,
+.down:focus {
+    border: none;
+    outline: none;
+    background: url("/assets/co-ordinator/drop.png");
+}
+
+.dropdown-menu {
+    width: 227px;
+    height: 121px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+}
+
+.dropdown-menu a {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: left;
+    letter-spacing: 0.1em;
+    color: #0A587A;
 }
