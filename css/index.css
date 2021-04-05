@@ -67,6 +67,17 @@ p {
     margin: 0 10px;
 }
 
+.domain p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    padding-right: 185px;
+    margin: 0 10px;
+}
+
 .choose label {
     font-family: 'Quicksand';
     font-style: normal;
@@ -89,12 +100,30 @@ input::placeholder {
 
 input[type="email"],
 input[type="password"],
-input[type="text"] {
+input[type="text"],
+.custom-select {
     width: 344px;
     height: 42px;
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 10px;
+}
+
+.custom-select {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+}
+
+option {
+    color: #263238;
+    font-family: 'Quicksand';
+    font-size: 15px;
 }
 
 .form-group {
@@ -308,7 +337,8 @@ input[type="text"] {
         margin-right: 5%;
     }
     input[type="email"],
-    input[type="password"] {
+    input[type="password"],
+    .custom-select {
         width: 300px;
     }
     .choose p {
@@ -333,7 +363,8 @@ input[type="text"] {
 
 @media(max-width:325px) {
     input[type="email"],
-    input[type="password"] {
+    input[type="password"],
+    .custom-select {
         width: 250px;
     }
     .abt,
