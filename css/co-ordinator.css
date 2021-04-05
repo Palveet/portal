@@ -391,3 +391,7 @@ input[type="search"] {
     letter-spacing: 0.1em;
     color: #0A587A;
 }
+
+.curr-date p {
+    display: inline;
+}

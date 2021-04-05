@@ -190,10 +190,11 @@
                     </tbody>
                 </table>
             </div>
-
             <div class="col-lg-3 date">
-                <p><img src="assets/co-ordinator/calendar_icon.png"> March 25, 2021</p>
-
+                <div class="curr-date">
+                    <img src="assets/co-ordinator/calendar_icon.png">
+                    <p id="day"> </p>
+                </div>
                 <div class="some-class">
                     <div class="calendar-container">
                         <div id="dycalendar-month-with-skin-shadow" class="dycalendar-container skin-default shadow-default"></div>
@@ -213,6 +214,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -231,6 +233,9 @@
             highlighttoday: true,
             prevnextbutton: "show"
         });
+        var d = new Date();
+        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Septemper', 'October', 'November', 'December']
+        document.getElementById("day").innerHTML = months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
     </script>
 </body>
 

@@ -191,15 +191,17 @@
                 </table>
             </div>
 
-            <div class="col-lg-3 date">
-                <p><img src="assets/co-ordinator/calendar_icon.png"> March 25, 2021</p>
 
+            <div class="col-lg-3 date">
+                <div class="curr-date">
+                    <img src="assets/co-ordinator/calendar_icon.png">
+                    <p id="day"> </p>
+                </div>
                 <div class="some-class">
                     <div class="calendar-container">
                         <div id="dycalendar-month-with-skin-shadow" class="dycalendar-container skin-default shadow-default"></div>
                     </div>
                 </div>
-
 
                 <div class="strength">
                     <h1>Current Strength</h1>
@@ -231,6 +233,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
     <script src="js/dycalendar.min.js"></script>
     <script>
         dycalendar.draw({
@@ -241,6 +244,10 @@
             highlighttoday: true,
             prevnextbutton: "show"
         });
+        var d = new Date();
+        months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Septemper', 'October', 'November', 'December']
+        document.getElementById("day").innerHTML = months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+        console.log(d);
     </script>
 </body>
 
