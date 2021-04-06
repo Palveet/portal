@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 .content,
 .date {
     margin: 0;
@@ -417,4 +418,65 @@ input[type="search"] {
 .nav-icon {
     width: 35px;
     height: 35px;
+}
+
+.panel {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 2% 2% 0;
+}
+
+.panel-body {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    color: rgba(0, 0, 0, 0.46);
+    padding: 2%;
+}
+
+.panel-group .panel-heading {
+    padding: 0;
+}
+
+.panel-heading {
+    height: 62px;
+}
+
+.panel-group .panel-heading a {
+    text-decoration: none;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    color: #109FDD;
+}
+
+.panel-group .panel-heading a:after {
+    content: '-';
+    float: right;
+    color: black;
+}
+
+.panel-group .panel-heading a.collapsed:after {
+    content: '+';
+    color: black;
+}
+
+.faq {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #263238;
 }
