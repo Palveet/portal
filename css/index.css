@@ -1,6 +1,7 @@
 body {
     background: url("/assets/home/portal_home.png");
     background-size: auto;
+    background-repeat: no-repeat;
 }
 
 .welcome {
