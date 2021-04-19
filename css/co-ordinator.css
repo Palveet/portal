@@ -480,3 +480,98 @@ input[type="search"] {
     line-height: 24px;
     color: #263238;
 }
+
+@media(max-width:575px) {
+    .side-nav {
+        padding-top: 5%;
+    }
+    .side-bar {
+        height: 75vh;
+    }
+    .log-out {
+        left: 39%;
+        bottom: 3%;
+    }
+    .content {
+        padding: 20% 2%;
+    }
+    .navbar-light .navbar-toggler {
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+    .content h1 {
+        font-size: 20px;
+    }
+    .hello p,
+    .hello-hr p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .top-label th {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    tbody tr {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .date {
+        padding: 3% 22%;
+    }
+}
+
+@media(max-width:330px) {
+    .content h1 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .hello p,
+    .hello-hr p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .top-label th {
+        font-size: 9px;
+        line-height: 12px;
+    }
+    tbody tr {
+        font-size: 7px;
+        line-height: 10px;
+    }
+    .date {
+        padding: 3% 17%;
+    }
+}
+
+@media(min-width:597px) and (max-width:1000px) {
+    .navbar-light .navbar-toggler {
+        margin-top: 20%;
+        margin-left: 5%;
+    }
+    .content {
+        padding: 15% 4%;
+    }
+    .date {
+        padding: 20% 1%;
+    }
+    .side-nav {
+        padding-top: 5%;
+    }
+    .side-bar {
+        height: 75vh;
+    }
+    .log-out {
+        left: 39%;
+        bottom: 3%;
+    }
+}
+
+@media(min-width:900px) and (max-width:1030px) {
+    .content,
+    .date {
+        height: 100vh;
+    }
+}

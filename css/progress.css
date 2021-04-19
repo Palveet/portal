@@ -275,3 +275,19 @@
         width: 0;
     }
 }
+
+@media(max-width:1000px) {
+    .progress-area {
+        height: 40%;
+    }
+    .form-control {
+        margin-right: 10px;
+    }
+    .search {
+        right: 10%;
+    }
+    .notification {
+        width: 35px;
+        height: 35px;
+    }
+}
