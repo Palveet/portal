@@ -305,6 +305,10 @@ option {
         width: 80%;
         margin: 9% -39%;
     }
+    .custom-select {
+        margin-left: 10%;
+        margin-right: 5%;
+    }
 }
 
 @media(max-width:750px) {
