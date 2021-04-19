@@ -498,6 +498,7 @@ input[type="search"] {
     .navbar-light .navbar-toggler {
         margin-top: 20%;
         margin-left: 5%;
+        z-index: 1000;
     }
     .content h1 {
         font-size: 20px;
@@ -550,12 +551,13 @@ input[type="search"] {
     .navbar-light .navbar-toggler {
         margin-top: 20%;
         margin-left: 5%;
+        z-index: 1000;
     }
     .content {
         padding: 15% 4%;
     }
     .date {
-        padding: 20% 1%;
+        padding: 0 35%;
     }
     .side-nav {
         padding-top: 5%;
@@ -569,7 +571,7 @@ input[type="search"] {
     }
 }
 
-@media(min-width:900px) and (max-width:1030px) {
+@media(min-height:1000px) {
     .content,
     .date {
         height: 100vh;
