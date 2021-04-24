@@ -57,116 +57,100 @@
                             </a>
 
                         </li>
-
-
                     </ul>
                     <p class="log-out"><img src="assets/co-ordinator/logout.png"> Logout</p>
 
                 </div>
             </nav>
             <div class="col-lg-7 content">
-                <div class="position-sticky d-flex justify-content-between">
+                <div class=" d-flex justify-content-between">
                     <h1>Internship Dashboard</h1>
+
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" aria-label="Search">
                         <img src="assets/co-ordinator/search.png" class="search"> </form>
+
                 </div>
-
-
-                <div class="progress-area row">
-                    <div class=" col-lg-6 text-center">
-                        <img src="assets/co-ordinator/dummy-img.png">
-                        <h1 class="intern-name">Anoushka Halder</h1>
-                        <p class="cred">INTERN ID: <span>1234HT</span></p>
-                        <p class="cred">MENTOR ID: <span>1234HT</span></p>
-                    </div>
-                    <div class="skill-wise col-lg-6">
-                        <div class="d-flex justify-content-between">
-                            <h2>Tasks Completed</h2>
-                            <span class="count">3</span>
-                        </div>
-                        <div class="d-flex justify-content-aroun">
-                            <div class="skill">
-                                <h1>HTML</h1>
-                            </div>
-                            <div class="progress blue-linear">
-                                <div class="progress-bar" style="width:25%; background:#109FDD;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-around">
-                            <div class="skill">
-                                <h1>CSS</h1>
-                            </div>
-                            <div class="progress blue-linear">
-                                <div class="progress-bar" style="width:90%; background:#109FDD;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-around">
-                            <div class="skill">
-                                <h1>JS</h1>
-                            </div>
-                            <div class="progress blue-linear">
-                                <div class="progress-bar" style="width:65%; background:#109FDD;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <h2>Certificates</h2>
-                        </div>
-                        <p class="cred text-left">PHONE: <span>9163761085</span></p>
-                        <p class="cred text-left">EMAIL: <span>anoushka2908@gmail.com</span></p>
-                    </div>
+                <div class="hello-hr">
+                    <h1>Hello,<span class="name">Krittarth!</span> </h1>
+                    <p>Here's what's going on in Inception Wave.</p>
                 </div>
                 <div class="d-flex justify-content-between">
+                    <h3>Task Details</h3>
+                    <img src="assets/co-ordinator/edit.png" class="edit">
+                </div>
+                <div class="progress-area row">
+                    <div class=" col-lg-6 text-center">
+                        <div class="task-det">
+                            <h4 class="title text-left">Task Title</h4>
+                            <p class="task-name text-left">Ideas for Growth</p>
+                        </div>
+                        <div class="task-det">
+                            <h4 class="title text-left">Task Description</h4>
+                            <p class="task-des text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </div>
+                    </div>
+                    <div class="skill-wise col-lg-6">
+                        <div class="task-det">
+                            <h4 class="title text-left">Skills</h4>
+                            <div class="d-flex justify-content-start">
+                                <div class="skills">
+                                    <h4 class="text-center">HTML</h4>
+                                </div>
+                                <div class="skills">
+                                    <h4 class="text-center">CSS</h4>
+                                </div>
+                                <div class="skills">
+                                    <h4 class="text-center">JS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-det">
+                            <h4 class="title text-left">Files</h4>
+                            <p class="task-name text-left">Analysis.doc</p>
+                        </div>
+                        <div class="task-det">
+                            <h4 class="title text-left">Due Date</h4>
+                            <p class="task-name text-left">23 May 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="d-flex justify-content-between">
                     <h3>Tasks</h3>
+                    <img src="assets/co-ordinator/add.png">
                 </div>
-                <div class="task-details">
-                    <form>
-                        <div class="form-row">
-                            <div class="col-lg-6 mb-3">
-                                <label for="validationTooltip01">Task Title</label>
-                                <input type="text" class="form-control" id="validationTooltip01" required placeholder="Add Task Name">
 
-                            </div>
-                            <div class="col-lg-6 mb-3">
-                                <label for="custom-select">Skills</label>
-                                <select id="custom-select" class="form-control" placeholder="Select Skills">
-        <option>Select Skills</option>
-      </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-lg-6 mb-3"> <label for="exampleTextarea">Task Description</label>
-                                <textarea class="form-control" id="exampleTextarea" placeholder="Describe in 100 characters." texta required></textarea>
-
-                            </div>
-                            <div class="col-lg-6 mb-3">
-                                <h3 class="file-label">Files</h3>
-                                <div class="custom-file">
-
-                                    <input type="file" class="custom-file-input" id="customFile">
-                                    <label class="custom-file-label" for="customFile">Add a single File or link</label>
+                <table class="table">
+                    <thead>
+                        <tr class="top-label">
+                            <th scope="col">Title</th>
+                            <th scope="col">Task Status</th>
+                            <th scope="col">Due Date</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Ideas for Growth</th>
+                            <td class="pending">Pending</td>
+                            <td>April 6,2021</td>
+                            <td>
+                                <div class="dropleft">
+                                    <button type="button" class="dropdown-toggle down" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        
+                                </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Download</a>
+                                        <a class="dropdown-item" href="#">Review Task</a>
+                                    </div>
                                 </div>
-                            </div>
+                            </td>
+                        </tr>
 
-                        </div>
-                        <div class="form-row d-flex justify-content-end">
-                            <div class="col-lg-6 mb-3">
-                                <div class="form-group">
-                                    <label for="example-date-input">Date</label>
 
-                                    <input class="form-control" type="date" value="" id="example-date-input">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn btn-primary" type="submit">Assign</button>
-                        </div>
-                    </form>
-                </div>
+                    </tbody>
+                </table>
             </div>
 
 
@@ -180,6 +164,17 @@
                         <div id="dycalendar-month-with-skin-shadow" class="dycalendar-container skin-default shadow-default"></div>
                     </div>
                 </div>
+
+                <div class="strength">
+                    <h1>Current Strength</h1>
+                    <div class="row">
+
+                        <div class="col-12 text-center">
+                            <p>48<br><span class="mute">Total Interns</span></p>
+                        </div>
+                    </div>
+                </div>
+
 
 
                 <div class="join-us">
