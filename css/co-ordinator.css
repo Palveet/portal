@@ -401,18 +401,119 @@ input[type="search"] {
     display: inline;
 }
 
-.notification {
+.notification button {
     width: 28px;
     height: 35px;
     background: #FFFFFF;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin-top: 35px;
+    border: none;
+    border-color: transparent;
+    position: relative;
+    z-index: 1000;
 }
 
-.notification img {
+.notification button:hover,
+.notification button:active,
+.notification button:focus,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+    width: 28px;
+    height: 35px;
+    background: #fff!important;
+    border: none;
+    border-color: transparent;
+}
+
+.notification button img {
     width: 20px;
     height: 20px;
+    position: absolute;
+    left: 15%;
+    top: 18%;
+}
+
+.notification .collapse h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0A587A;
+    text-align: left;
+}
+
+.notification .collapse h4 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    color: #0A587A;
+}
+
+.notification .collapse p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px!important;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #263238;
+    text-align: left;
+}
+
+.notification .collapse h5 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    color: #0A587A;
+}
+
+.notification .collapse {
+    position: absolute;
+    left: 60%;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    z-index: 1000;
+    width: 100px;
+    height: 100px;
+    /*
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;*/
+}
+
+.notification .collapse .collapse {
+    position: absolute;
+    left: 0%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: none;
+}
+
+.old {
+    margin-top: 0;
+    background: inherit;
+    width: 100%;
+}
+
+.old h3 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: rgba(117, 112, 112, 0.61);
 }
 
 .nav-icon {

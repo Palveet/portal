@@ -1,0 +1,93 @@
+    .intern-name {
+        font-size: 20px!important;
+        line-height: 24px!important;
+    }
+    
+    .cred {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #000000!important;
+    }
+    
+    .cred span {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #0A587A;
+    }
+    
+    .count {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 37px;
+        color: #109FDD;
+        margin-bottom: 20px;
+    }
+    
+    .task-details {
+        width: 100%;
+        height: 400px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin: 0;
+        padding: 5%;
+        margin-bottom: 10%;
+    }
+    
+    label,
+    .file-label {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #263238;
+    }
+    
+    input::placeholder,
+    textarea::placeholder,
+    .custom-file label,
+    .form-control {
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+        color: #757070;
+        width: 85%;
+    }
+    
+    input,
+    textarea,
+    select,
+    #customFile {
+        border-top-color: transparent!important;
+        border-left-color: transparent!important;
+        border-right-color: transparent!important;
+    }
+    
+    form button {
+        width: 88px;
+        height: 33px;
+        background: #109FDD!important;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
