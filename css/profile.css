@@ -144,3 +144,18 @@
         letter-spacing: 0.1em;
         color: #0A587A;
     }
+    
+    .grade {
+        position: relative;
+    }
+    
+    .grade input {
+        color: #2DA771!important;
+    }
+    
+    .total {
+        position: absolute;
+        right: 15%;
+        bottom: 10%;
+        color: #757070;
+    }

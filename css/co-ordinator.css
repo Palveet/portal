@@ -583,7 +583,7 @@ input[type="search"] {
 }
 
 .modal-content {
-    padding: 5%;
+    padding: 2% 5%;
     border-radius: 15px;
 }
 
@@ -595,9 +595,12 @@ input[type="search"] {
 
 .modal-header {
     display: block;
-    font-weight: 500;
-    color: #263238;
     border-bottom: none;
+}
+
+.modal-header h5 {
+    font-weight: bold;
+    color: #263238;
 }
 
 .modal-content label {
@@ -643,7 +646,7 @@ select {
     overflow: hidden;
 }
 
-form button {
+.modal-footer button {
     width: 88px;
     height: 33px;
     background: #109FDD!important;
