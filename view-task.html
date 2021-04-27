@@ -39,139 +39,134 @@
                     <ul class="nav flex-column mb-2 side-nav">
                         <li class="nav-item">
                             <a class="nav-link d-flex justify-content-around" href="#">
-                                <img src="assets/co-ordinator/intern.png" class="nav-icon">
-                                <p>Interns</p>
+                                <img src="assets/co-ordinator/intern-active.png" class="nav-icon">
+                                <p class="active">Tasks</p>
                             </a>
                         </li>
 
                         <li class="nav-item">
                             <a class="nav-link d-flex justify-content-around" href="#">
-                                <img src="assets/co-ordinator/track-active.png" class="nav-icon">
-                                <p class="active">Tracking</p>
+                                <img src="assets/co-ordinator/track.png" class="nav-icon">
+                                <p>Progress</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex justify-content-around" href="#">
                                 <img src="assets/co-ordinator/review.png" class="nav-icon">
-                                <p>Tasks</p>
+                                <p>FAQs</p>
                             </a>
-
                         </li>
-
-
                     </ul>
                     <p class="log-out"><img src="assets/co-ordinator/logout.png"> Logout</p>
 
                 </div>
             </nav>
-            <div class="col-lg-7 content">
-                <div class="position-sticky d-flex justify-content-between">
+            <div class="col-lg-7 content bg">
+                <div class=" d-flex justify-content-between">
                     <h1>Internship Dashboard</h1>
+
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" aria-label="Search">
                         <img src="assets/co-ordinator/search.png" class="search"> </form>
+
                 </div>
-
-
-                <div class="progress-area row">
-                    <div class=" col-lg-6 text-center">
-                        <img src="assets/co-ordinator/dummy-img.png">
-                        <h1 class="intern-name">Anoushka Halder</h1>
-                        <p class="cred">INTERN ID: <span>1234HT</span></p>
-                        <p class="cred">MENTOR ID: <span>1234HT</span></p>
-                    </div>
-                    <div class="skill-wise col-lg-6">
-                        <div class="d-flex justify-content-between">
-                            <h2>Tasks Completed</h2>
-                            <span class="count">3</span>
-                        </div>
-                        <div class="d-flex justify-content-aroun">
-                            <div class="skill">
-                                <h1>HTML</h1>
-                            </div>
-                            <div class="progress blue-linear">
-                                <div class="progress-bar" style="width:25%; background:#109FDD;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-around">
-                            <div class="skill">
-                                <h1>CSS</h1>
-                            </div>
-                            <div class="progress blue-linear">
-                                <div class="progress-bar" style="width:90%; background:#109FDD;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-around">
-                            <div class="skill">
-                                <h1>JS</h1>
-                            </div>
-                            <div class="progress blue-linear">
-                                <div class="progress-bar" style="width:65%; background:#109FDD;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <h2>Certificates</h2>
-                        </div>
-                        <p class="cred text-left">PHONE: <span>9163761085</span></p>
-                        <p class="cred text-left">EMAIL: <span>anoushka2908@gmail.com</span></p>
-                    </div>
+                <div class="hello-hr">
+                    <h1>Hello,<span class="name">Krittarth!</span> </h1>
+                    <p>Here's what's going on in Inception Wave.</p>
                 </div>
                 <div class="d-flex justify-content-between">
+                    <h3>Task Details</h3>
+                    <button class="btn btn-primary submit-task" type="submit">SUBMIT</button>
+                </div>
+                <div class="progress-area row">
+                    <div class=" col-lg-6 text-center">
+                        <div class="task-det">
+                            <h4 class="title text-left">Task Title</h4>
+                            <p class="task-name text-left">Ideas for Growth</p>
+                        </div>
+                        <div class="task-det">
+                            <h4 class="title text-left">Task Description</h4>
+                            <p class="task-des text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </div>
+                    </div>
+                    <div class="skill-wise col-lg-6">
+                        <div class="task-det">
+                            <h4 class="title text-left">Skills</h4>
+                            <div class="d-flex justify-content-start">
+                                <div class="skills">
+                                    <h4 class="text-center">HTML</h4>
+                                </div>
+                                <div class="skills">
+                                    <h4 class="text-center">CSS</h4>
+                                </div>
+                                <div class="skills">
+                                    <h4 class="text-center">JS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-det">
+                            <h4 class="title text-left">Files</h4>
+                            <p class="task-name text-left">Analysis.doc</p>
+                        </div>
+                        <div class="task-det">
+                            <h4 class="title text-left">Due Date</h4>
+                            <p class="task-name text-left">23 May 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="d-flex justify-content-between">
                     <h3>Tasks</h3>
+                    <img src="assets/co-ordinator/add.png">
                 </div>
-                <div class="task-details">
-                    <form>
-                        <div class="form-row">
-                            <div class="col-lg-6 mb-3">
-                                <label for="validationTooltip01">Task Title</label>
-                                <input type="text" class="form-control" id="validationTooltip01" required placeholder="Add Task Name">
 
-                            </div>
-                            <div class="col-lg-6 mb-3">
-                                <label for="custom-select">Skills</label>
-                                <select id="custom-select" class="form-control" placeholder="Select Skills">
-        <option>Select Skills</option>
-      </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col-lg-6 mb-3"> <label for="exampleTextarea">Task Description</label>
-                                <textarea class="form-control" id="exampleTextarea" placeholder="Describe in 100 characters." texta required></textarea>
+                <table class="table">
+                    <thead>
+                        <tr class="top-label">
+                            <th scope="col">Intern</th>
+                            <th scope="col">Review Status</th>
+                            <th scope="col">Files</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Anoushka Halder</th>
+                            <td class="pending">Pending</td>
+                            <td>
+                                Analysis.doc
+                            </td>
+                            <td>April 21,2021</td>
+                        </tr>
 
-                            </div>
-                            <div class="col-lg-6 mb-3">
-                                <h3 class="file-label">Files</h3>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="customFile">
-                                    <label class="custom-file-label" for="customFile">Add a single File or link</label>
 
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="form-row d-flex justify-content-end">
-                            <div class="col-lg-6 mb-3">
-                                <div class="form-group">
-                                    <label for="example-date-input">Date</label>
-
-                                    <input class="form-control" type="date" value="" id="example-date-input">
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn btn-primary" type="submit">Assign</button>
-                        </div>
-                    </form>
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-between">
+                    <h3>Queries</h3>
                 </div>
+
+                <table class="table">
+                    <thead>
+                        <tr class="top-label">
+                            <th scope="col">Question</th>
+                            <th scope="col">Answer</th>
+                            <th scope="col">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Do we need to add pictures?</th>
+                            <td>Yes, in the document itself</td>
+                            <td>
+                                <img src="assets/co-ordinator/edit.png" class="edit"></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
 
-            <div class="col-lg-3 date">
+            <div class="col-lg-3 date bg">
                 <div class="curr-date">
                     <img src="assets/co-ordinator/calendar_icon.png">
                     <p id="day"> </p>
@@ -181,8 +176,19 @@
                         <div id="dycalendar-month-with-skin-shadow" class="dycalendar-container skin-default shadow-default"></div>
                     </div>
                 </div>
-
-
+                <div class="strength">
+                    <h1>Credentials</h1>
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <p>123RHT
+                                <br>
+                                <span class="mute">Intern ID</span></p>
+                        </div>
+                        <div class="col-6 text-center">
+                            <p>25MTH<br><span class="mute">Mentor ID</span></p>
+                        </div>
+                    </div>
+                </div>
                 <div class="join-us">
                     <h1>Join Us</h1>
                     <div class="row">
@@ -218,10 +224,6 @@
         months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Septemper', 'October', 'November', 'December']
         document.getElementById("day").innerHTML = months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
         console.log(d);
-        $(".custom-file-input").on("change", function() {
-            var fileName = $(this).val().split("\\").pop();
-            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-        });
     </script>
 </body>
 

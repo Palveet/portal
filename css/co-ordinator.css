@@ -19,6 +19,10 @@
     color: #0A587A;
 }
 
+.bg {
+    background: #F3F8FC;
+}
+
 .hello {
     background: url("/assets/co-ordinator/top-bg.png");
     padding: 2%;
@@ -650,6 +654,21 @@ select {
     width: 88px;
     height: 33px;
     background: #109FDD!important;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+.submit-task {
+    width: 88px;
+    height: 33px;
+    background: #109FDD;
+    border-radius: 7px;
+    margin-top: 15px;
     font-family: Quicksand;
     font-style: normal;
     font-weight: bold;
