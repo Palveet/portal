@@ -628,8 +628,14 @@ select {
     border-right-color: transparent!important;
 }
 
-.modal-content .form-control {
+.modal-content .form-control,
+#customFile {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
     font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
     color: #263238;
 }
 
@@ -773,4 +779,41 @@ select {
     .date {
         height: 100vh;
     }
+}
+
+#customFile .custom-file-control:lang(en)::before {
+    content: "Add a single file or link";
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #263238;
+}
+
+#customFile .custom-file-control:lang(en)::after {
+    content: url("/assets/co-ordinator/attach_file.png");
+    position: absolute;
+    right: 12%;
+}
+
+
+/*when a value is selected, this class removes the content */
+
+.custom-file-control.selected:lang(en)::before {
+    content: "" !important;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #263238;
+}
+
+.custom-file-input {
+    display: none;
 }
