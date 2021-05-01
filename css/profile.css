@@ -159,3 +159,38 @@
         bottom: 10%;
         color: #757070;
     }
+    
+    #customFile .custom-file-control:lang(en)::before {
+        content: "Add a single file or link";
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #757070;
+    }
+    
+    #customFile .custom-file-control:lang(en)::after {
+        content: url("/assets/co-ordinator/attach_file.png");
+        position: absolute;
+        right: 12%;
+    }
+    /*when a value is selected, this class removes the content */
+    
+    .custom-file-control.selected:lang(en)::before {
+        content: "" !important;
+        font-family: Quicksand;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #757070;
+    }
+    
+    .custom-file-input {
+        display: none;
+    }

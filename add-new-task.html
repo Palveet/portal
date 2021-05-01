@@ -143,12 +143,19 @@
 
                             </div>
                             <div class="col-lg-6 mb-3">
+
                                 <h3 class="file-label">Files</h3>
+                                <label class="custom-file" id="customFile">
+                                    <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+                                    <span class="custom-file-control form-control-file"></span>
+                                    <input type="text" class="form-control" id="validationTooltip01" required style="margin-top:-6%">
+                                </label>
+                                <!--
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" id="customFile">
                                     <label class="custom-file-label" for="customFile">Add a single File or link</label>
 
-                                </div>
+                                </div>-->
 
                             </div>
 
@@ -218,10 +225,10 @@
         months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Septemper', 'October', 'November', 'December']
         document.getElementById("day").innerHTML = months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
         console.log(d);
-        $(".custom-file-input").on("change", function() {
-            var fileName = $(this).val().split("\\").pop();
-            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-        });
+        $('.custom-file-input').on('change', function() {
+            var fileName = document.getElementById("exampleInputFile").files[0].name;
+            $(this).next('.form-control-file').addClass("selected").html(fileName);
+        })
     </script>
 </body>
 
