@@ -70,7 +70,64 @@
                             <input class="form-control mr-sm-2" type="search" aria-label="Search">
                             <img src="assets/co-ordinator/search.png" class="search"> </form>
                         <div class="notification text-center">
-                            <img src="assets/co-ordinator/bell.png">
+                            <div class="dropdown dropleft" id="myDropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <img src="assets/co-ordinator/bell.png">
+                                          <div class="red"></div>
+                                        </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <h1>Notifications</h1>
+                                    <h5 class="text-center">TODAY</h5>
+                                    <div class=" d-flex justify-content-between">
+                                        <div style="width:234px!important;">
+                                            <a href="#">
+                                                <p>You have been assigned new task!</p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <p class="time" style="width:50px;">1h ago</p>
+                                        </div>
+                                    </div>
+                                    <div class=" d-flex justify-content-between">
+                                        <div style="width:234px!important;">
+                                            <a href="#">
+                                                <p>Your mentor replied to you!
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <p class="time" style="width:50px;">3h ago</p>
+                                        </div>
+                                    </div>
+
+                                    <span id="dots"></span>
+                                    <span id="more">
+                                                <div class=" d-flex justify-content-between">
+                                                    <div style="width:234px!important;">
+                                                        <a href="#">
+                                                            <p>Your mentor replied to you!
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <p class="time" style="width:50px;">3h ago</p>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class=" d-flex justify-content-between">
+                                                    <div style="width:234px!important;">
+                                                        <a href="#">
+                                                            <p>Your mentor replied to you!
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <p class="time" style="width:50px;">3h ago</p>
+                                                    </div>
+                                                </div></span>
+                                    <button onclick="myFunction()" id="myBtn" class="older">CHECK OLDER &darr;</button>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -232,6 +289,27 @@
         months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'Septemper', 'October', 'November', 'December']
         document.getElementById("day").innerHTML = months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
         console.log(d);
+
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "CHECK OLDER &darr;	";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "GO BACK &uarr;	";
+                moreText.style.display = "inline";
+            }
+        }
+        $('#myDropdown .dropdown-menu').on({
+            "click": function(e) {
+                e.stopPropagation();
+            }
+        });
     </script>
 </body>
 

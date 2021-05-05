@@ -850,3 +850,7 @@ select {
     right: 0;
     top: -5px;
 }
+
+.d-flex {
+    z-index: 10;
+}
