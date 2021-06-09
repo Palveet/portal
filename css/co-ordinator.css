@@ -24,14 +24,14 @@
 }
 
 .hello {
-    background: url("/assets/co-ordinator/top-bg.png");
+    background: url("../assets/co-ordinator/top-bg.png");
     padding: 2%;
     background-repeat: no-repeat;
     border-radius: 10px;
 }
 
 .hello-hr {
-    background: url("/assets/co-ordinator/hr-bg.png");
+    background: url("../assets/co-ordinator/hr-bg.png");
     padding: 2%;
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -376,7 +376,7 @@ input[type="search"] {
 .down:focus {
     border: none;
     outline: none;
-    background: url("/assets/co-ordinator/drop.png");
+    background: url("../assets/co-ordinator/drop.png");
 }
 
 .dropdown-menu {
