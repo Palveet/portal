@@ -861,3 +861,26 @@ select {
     height: 45px;
     background-repeat: no-repeat;
 }
+
+.filter button {
+    width: 70px;
+    height: 70px;
+    background: url("/assets/co-ordinator/filter.png");
+}
+
+.filter .down,
+.filter .down:focus {
+    background: url("/assets/co-ordinator/filter.png");
+}
+
+.filter .dropdown-menu {
+    top: 25%!important;
+    width: fit-content;
+    right: 0!important;
+    padding: 10%;
+}
+
+.filter h4 {
+    font-size: 15px;
+    color: #0A587A;
+}
