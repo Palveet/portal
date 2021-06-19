@@ -287,6 +287,20 @@ option {
     margin-left: 0;
 }
 
+.register {
+    background: url("/assets/home/register.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.register .form-group {
+    margin: 0;
+}
+
+.register .signup {
+    margin-top: 30px;
+}
+
 @media(max-width:1100px) {
     .card {
         margin: 9%;
